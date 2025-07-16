@@ -41,9 +41,10 @@ cat /tmp/resultados.txt
 
 ## Formato de salida
 
-El archivo de salida tendrá una línea por vértice:
+El archivo de salida tendrá el siguiente encabezado y una línea por vértice:
 
 ```
+Vértice	Distancia desde el origen
 0	0
 1	8
 2	9
