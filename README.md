@@ -25,7 +25,7 @@ g++ -fopenmp -O2 -std=c++11 dijkstra_omp.cpp -o dijkstra_omp
 El programa se ejecuta con:
 
 ```sh
-./programa "[[matriz_ady]]" vertice_origen ruta_salida.txt
+./dijkstra_omp "[[matriz_ady]]" vertice_origen ruta_salida.txt
 ```
 
 - `[[matriz_ady]]`: Matriz de adyacencia en formato tipo Python, por ejemplo: `[[0,10,0],[0,0,5],[0,0,0]]`
@@ -35,7 +35,7 @@ El programa se ejecuta con:
 **Ejemplo:**
 
 ```sh
-./programa "[[0,10,0,0,5],[0,0,1,0,2],[0,0,0,4,0],[7,0,6,0,0],[0,3,9,2,0]]" 0 /tmp/resultados.txt
+./dijkstra_omp "[[0,10,0,0,5],[0,0,1,0,2],[0,0,0,4,0],[7,0,6,0,0],[0,3,9,2,0]]" 0 /tmp/resultados.txt
 cat /tmp/resultados.txt
 ```
 
